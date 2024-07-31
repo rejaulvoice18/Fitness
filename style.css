@@ -1,0 +1,243 @@
+/*==================Fonts=======================*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+
+.inter-fonts {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: 16px;
+}
+@font-face {
+    font-family: Miama;
+    src: url("fonts/Miama.ttf");
+}
+/*====Shared Styles=====*/
+body{
+    background-color: black;
+    max-width: 1060px;
+    margin: 0 auto;
+    color: white;
+    font-family: "Inter", sans-serif;
+}
+.display-flex{
+    display: flex;
+}
+.section-title{
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.section-description{
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+section{
+    margin: 100px 0px;
+}
+
+/*=====Header Styles from here========*/
+header{
+    max-width: 1060px;
+    margin: 0 auto;
+}
+.menu-container{
+    justify-content: space-between;
+    align-items: center;
+}
+.navigation ul li{
+    list-style-type: none;
+    float: left;
+    margin-left: 47px;
+}
+.navigation ul li a{
+    text-decoration:none;
+    color: white;
+    font-size: 1.1rem;
+    
+}
+.logo{
+    color: #E6533C;
+    font-size: 2.1rem;
+    font-weight: 800;
+}
+.navigation .active{
+    background-color: #E6533C;
+    padding: 5px 15px;
+    border-radius: 46px;
+    font-weight: 600;
+}
+/*========Banner Start from here========*/
+.banner-container{
+    justify-content: space-between;
+    align-items: center;
+    gap:87px;
+    margin: 80px 0px;
+}
+.banner-content{
+
+}
+.banner-title{
+    font-size: 4.9rem;
+    font-weight: 700;
+    padding-right: 90px;
+    margin-bottom: 10px;
+}
+.banner-description{
+    padding-right: 100px;
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 28px;
+}
+.btn-primary{
+    background-color: #E6533C;
+    border-radius: 42px;
+    color: white;
+    padding: 10px 40px;
+    font-size: 1.1rem;
+    font-weight: 600px;
+    border:none;
+}
+.btn-download{
+    background-color: black;
+    border-radius: 42px;
+    color: white;
+    padding: 10px 40px;
+    font-size: 1.1rem;
+    font-weight: 600px;
+    border:1px solid white;
+}
+
+.banner-image{
+    position: relative
+
+}
+.video-tutorial{
+    align-items: center;
+    text-align: left;
+    gap:20px;
+    color: white;
+    background-color: rgba(48, 48, 48, 0.54);
+    position: absolute;
+    top: 400px;
+    left: -60px;
+    padding: 10px 23px;
+    border-radius: 12px;
+   
+}
+.free-workout{
+    color: white;
+    background-color: rgba(48, 48, 48, 0.54);
+    position: absolute;
+    top: 125px;
+    right: -40px;
+    padding: 20px 23px;
+    border-radius: 12px;
+}
+#miami-font{
+    font-size: 4.9rem;
+    font-weight: 400;
+    font-family: Miama;
+}
+#workout-video-number{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+#tutorial-number{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 3px;
+}
+.circle{
+    color: red;
+    font-size: 30px;
+    background-color: red;
+    border-radius: 50%;
+}
+/*==================Habits section styles from here==================*/
+.habit-container{
+    text-align: center;
+}
+.habits-cards-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 60px;
+    gap: 20px;
+    
+}
+.habit-card{}
+.habit-card img{
+    border-radius: 100%;
+}
+.ard-title{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.habit-description{
+    color: rgba(255, 255, 255, 0.5);
+}
+/*==============Run an Extra Styles from here================*/
+.run-an-extra-container{
+    background-color: rgba(34, 34, 34, 1);
+    border-radius: 18px;
+    padding: 50px;
+    gap: 165px;
+
+}
+.run-content{
+
+}
+.run-image img{
+    width: 100%;
+    border-radius: 18px;
+}
+
+/*=====Responsive for mobile device=========*/
+@media screen and (max-width: 576px) {
+    .banner-container{
+        flex-direction: column;
+        margin: 0px 30px;
+    }
+    .menu-container{
+        flex-direction: column;
+        margin: 20px 30px;
+    }
+    .banner-title{
+        font-size: 2.1rem;    
+    }
+    .btn-banner, .btn-download{
+        padding: 20px 30px;
+        font-size: 1rem;
+    }
+    .habits-cards-container{
+        grid-template-columns: repeat(1, 1fr);
+        margin: 20px 40px;
+    }
+    .section-title{
+        font-size: 2.1rem;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+    .run-an-extra-container{
+        flex-direction: column;
+        gap: 25px;
+    }
+    #btn-primary{
+        width: 100%;
+    }
+}
+
+/*=======Responsive for tablet device========*/
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .banner-container, .menu-container{
+        margin: 0px 40px;
+    }
+    .habits-cards-container{
+        grid-template-columns: repeat(2, 1fr);
+        margin: 20px 40px;
+    }
+    .banner-title{
+        font-size: 4.2rem;    
+    }
+}
