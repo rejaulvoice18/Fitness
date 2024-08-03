@@ -351,7 +351,7 @@ header{
     }
     .single-title-thumbnail-2-2{
         font-size: 0.8rem;
-        top: 20px;
+        top: 80px;
         left: 10px;
     }
     .training-container{
@@ -363,9 +363,7 @@ header{
         height: 100%;
     }
     .single-title-thumbnail-2-1{
-        z-index:1;
-        position: absolute;
-        top: 40px;
+        top: 80px;
         left: 10px;
         font-size: 0.8rem;
     }
