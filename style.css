@@ -192,6 +192,124 @@ header{
     border-radius: 18px;
 }
 
+/*=============Training and Exercise==============*/
+.training-container{
+
+}
+.single-thumbnail-1{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+.single-thumbnail-1 img{
+    width: 100%;
+    height: 100%;
+
+}
+
+.single-image-1, .single-image2, .single-image3, 
+.single-thumbnail-image-1, .single-thumbnail-image2, .single-thumbnail-image3{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.opacity{
+    content: "";
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(6, 255, 210, 0.5);
+}
+.single-title-1{
+    position: absolute;
+    z-index: 5;
+    top: 150px;
+    left: 20px;
+    color: black
+}
+
+.opacity2{
+    content: "";
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 0, 0, 0.3);
+}
+.single-title-2{
+    position: absolute;
+    z-index: 5;
+    top: 30px;
+    left: 30px;
+}
+
+.opacity3{
+    content: "";
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.single-title-3{
+    position: absolute;
+    z-index: 5;
+    top: 150px;
+    left: 30px;
+}
+/*========single-thumbnail-2 styles from here===========*/
+.single-thumbnail-2{
+    display: grid;
+    grid-template-columns: 1.8fr 1fr 1.2fr;
+}
+.single-thumbnail-2 img{
+    width: 100%;
+    height: 100%;
+}
+.opacity-thumbnail-2-1{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.single-title-thumbnail-2-1{
+    z-index:1;
+    position: absolute;
+    top: 30px;
+    left: 230px;
+}
+.single-title-thumbnail-2-2, .single-title-thumbnail-2-3{
+    z-index:1;
+    position: absolute;
+    top: 190px;
+    left: 30px;
+}
+
+.opacity-thumbnail-2-2{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(66, 255, 0, 0.3);
+}
+.opacity-thumbnail-2-3{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 71, 255, 0.3);
+}
+
 /*=====Responsive for mobile device=========*/
 @media screen and (max-width: 576px) {
     .banner-container{
@@ -225,7 +343,34 @@ header{
     #btn-primary{
         width: 100%;
     }
+    .single-thumbnail-1, .single-thumbnail-2{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .single-thumbnail-image3, .single-image3, .single-title-thumbnail-2-3{
+        display: none;
+    }
+    .single-title-thumbnail-2-2{
+        font-size: 0.8rem;
+        top: 20px;
+        left: 10px;
+    }
+    .training-container{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .single-thumbnail-1, .single-thumbnail-2 img{
+        width: 100%;
+        height: 100%;
+    }
+    .single-title-thumbnail-2-1{
+        z-index:1;
+        position: absolute;
+        top: 40px;
+        left: 10px;
+        font-size: 0.8rem;
+    }
 }
+
 
 /*=======Responsive for tablet device========*/
 
@@ -240,4 +385,5 @@ header{
     .banner-title{
         font-size: 4.2rem;    
     }
+   
 }
