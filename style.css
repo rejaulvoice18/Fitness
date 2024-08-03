@@ -388,5 +388,9 @@ header{
     .banner-title{
         font-size: 4.2rem;    
     }
-   
+    .single-title-thumbnail-2-1, .single-title-thumbnail-2-2, .single-title-thumbnail-2-3, .single-title-3{
+        top: 150px;
+        left: 10px;
+    }
+      
 }
