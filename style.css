@@ -417,7 +417,7 @@ td,th{
 .card-content{
     z-index: 1;
     position: absolute;
-    top: 60%;
+    top: 70%;
     left: 20px;
 }
 .content-bg{
