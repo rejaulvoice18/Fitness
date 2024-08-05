@@ -40,6 +40,9 @@ section{
 }
 
 /*=====Header Styles from here========*/
+.toggle{
+    display: none;
+}
 header{
     max-width: 1060px;
     margin: 0 auto;
@@ -484,20 +487,33 @@ td,th{
 }
 /*=====Responsive for mobile device=========*/
 @media screen and (max-width: 576px) {
+    /*nav section*/
+    .menu-container{
+        margin: 20px 30px;
+        justify-content: space-between;
+    }
+    .navigation>ul li {
+        display: none;
+    }
+     /*===responsive menu==*/
+     .responsive-menu:checked ~ .navigation2{
+        display: block;
+    }
+    .toggle{
+        display: block;
+        font-size: 25px;
+        cursor:pointer;
+    }
+    .responsive-icon:hover + .navigation>ul li{
+        display: block;
+    }
     .banner-container{
         flex-direction: column;
         margin: 0px 30px;
     }
-    .menu-container{
-        flex-direction: column;
-        margin: 20px 30px;
-    }
+   
     .banner-title{
         font-size: 2.1rem;    
-    }
-    .btn-banner, .btn-download{
-        padding: 20px 30px;
-        font-size: 1rem;
     }
     .habits-cards-container{
         grid-template-columns: repeat(1, 1fr);
@@ -588,6 +604,7 @@ td,th{
 /*=======Responsive for tablet device========*/
 
 @media screen and (min-width: 576px) and (max-width: 992px) {
+   
     .banner-container, .menu-container{
         margin: 0px 40px;
     }
