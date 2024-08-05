@@ -40,6 +40,10 @@ section{
 }
 
 /*=====Header Styles from here========*/
+.navigation{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 39px;
+}
 .toggle{
     display: none;
 }
@@ -47,14 +51,24 @@ header{
     max-width: 1060px;
     margin: 0 auto;
 }
+.navigation ul li{
+    align-items: center;
+    justify-content: center;
+}
 .menu-container{
     justify-content: space-between;
     align-items: center;
+    
 }
 .navigation ul li{
     list-style-type: none;
     float: left;
-    margin-left: 47px;
+    padding: 12px 20px 10px;
+}
+ul:first-child{
+    padding-left: 0px;
+    padding-top: 0px;
+    margin-top: 0px;
 }
 .navigation ul li a{
     text-decoration:none;
@@ -69,7 +83,7 @@ header{
 }
 .navigation .active{
     background-color: #E6533C;
-    padding: 5px 15px;
+    padding: 10px 15px;
     border-radius: 46px;
     font-weight: 600;
 }
