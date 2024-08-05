@@ -612,6 +612,9 @@ td,th{
     .video-tutorial{
         left: -20px;
     }
+    .navigation{
+        border:none;
+    }
 }
 
 
